@@ -1,0 +1,124 @@
+/* Define o tamanho da fonte e a família de fontes padrão */
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Define a cor de fundo do cabeçalho e posiciona a imagem no canto superior esquerdo */
+#cabecalho {
+  background-color: #003975;
+  height: 110px;
+  position: relative;
+}
+
+#cabecalho img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 90px;
+}
+
+/* Define o estilo para os títulos e os elementos do formulário */
+h3,
+label {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+input {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #003975;
+}
+
+button {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #003975;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #023368;
+}
+
+/* Define o estilo para os elementos de aluno */
+.alunos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.alunos label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.alunos input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.alunos button {
+  margin-top: 20px;
+}
+
+#limparDados {
+  background-color: #fff;
+  border: 1px solid #003975;
+  color: #003975;
+}
+
+#enviarDados {
+  display: inline
+}
+
+/* Define o estilo para as mensagens de aprovação/reprovação */
+
+#span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  width: 16rem;
+}
+
+#span.reprovado {
+  color: #ff3b1f;
+  width: bold;
+}
+
+#span.aprovado {
+  color: #000;
+  width: bold;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
