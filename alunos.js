@@ -3,9 +3,6 @@ const notaAv1 = document.getElementById('notaAv1Aluno')
 const notaAv2 = document.getElementById('notaAv2Aluno')
 const span = document.getElementById('span')
 const clear = document.getElementById('limparDados')
-// const enviarDadosBtn = document.getElementById('enviarDados')
-// const spanrecup = document.getElementById('recuperacao')
-
 
 function getDataAv1() {
   const notaAv1 = parseFloat(document.getElementById('notaAv1Aluno').value)
@@ -44,26 +41,6 @@ function getDataAv1() {
   }
 }
 
-// function getData() {
-//   const notaAv1 = parseFloat(document.getElementById('notaAv1Aluno').value)
-//   const notaAv2 = parseFloat(document.getElementById('notaAv2Aluno').value)
-//   const media = Number(notaAv1 + notaAv2) / 2
-//   const aviso = document.getElementById('aviso')
-//   // const resultado = document.getElementById('resultado')
-
-//   if (media < 7) {
-//     const precisaTirar = 10 - media
-//     span.style.display = 'none'
-//     span.innerHTML = `AVALIAÇÃO FINAL, SUA MEDIA FOI ${media}`
-//     aviso.innerHTML = `Você precisa tirar ${precisaTirar}, na Avaliação Final, para ser aprovado.`
-//   } else {
-//     span.style.display = 'none'
-//     span.innerHTML = `APROVADO, SUA MEDIA É ${media}`
-//     aviso.style.display = 'none'
-//   }
-//   console.log(media)
-// }
-
 notaAv1.addEventListener('keyup', getDataAv1)
 notaAv2.addEventListener('keyup', getDataAv1)
 clear.addEventListener('click', () => {
@@ -71,4 +48,3 @@ clear.addEventListener('click', () => {
   notaAv2.value = ''
   span.innerHTML = ''
 })
-// enviarDadosBtn.addEventListener('click', getData)
